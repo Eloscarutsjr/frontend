@@ -1,97 +1,107 @@
-*{
+/* Fuente y tamaño de fuente global */
+* {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
-.menu{
-    color: black;
-}
-.usuarios-container {
-    padding: 20px; 
-    background-color: #f9f9f9;
-    border-radius: 8px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+body {
+    background-color: #000000;
 }
 
-.titulo-usuarios {
-    font-size: 2em; 
-    color: #333; 
-    margin-bottom: 10px; 
+/* Contenedor general */
+.container {
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(255, 0, 0, 0.5);
+    margin-top: 100px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-.descripcion-usuarios {
-    font-size: 1.2em; 
-    color: #555; 
-    margin-bottom: 20px; 
+/* Estilo de Título */
+.titulo {
+    font-size: 2em;
+    color: #ff3d3d; /* Rojo intenso */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.usuarios-table {
-    width: 100%; 
-    border-collapse: collapse; 
+/* Estilo de Descripción */
+.descripcion {
+    font-size: 1.1em;
+    color: #f1f1f1;
+    margin-bottom: 25px;
+    font-weight: lighter;
 }
 
-.table-header {
-    background-color: #007BFF; 
-    color: white;
-    padding: 10px; 
-    border: 1px solid black; 
+/* Tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333333;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.table-data {
+/* Encabezado de Tabla */
+.table .table-header {
+    background-color: #a31212;
+    color: #ffffff; /* Color blanco para el texto */
     padding: 10px;
-    border: 1px solid black; 
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #222;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-.link-usuario {
-    color: #007BFF; 
-    text-decoration: none; 
+/* Celdas de datos de Tabla */
+.table .table-data {
+    padding: 10px;
+    border: 1px solid #222;
+    text-align: center;
+    color: #ffffff; /* Color blanco para el texto */
+    font-weight: lighter;
 }
 
-.link-usuario:hover {
-    text-decoration: underline; 
+.table-data:nth-child(even) {
+    background-color: #292929;
+}
+.table-data:nth-child(odd) {
+    background-color: #333333;
 }
 
-.noticias-container {
-    padding: 20px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+/* Estilo de enlaces */
+.link {
+    color: #ff3d3d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.titulo-noticias {
-    font-size: 2em; 
-    color: #333; 
-    margin-bottom: 10px; 
+.link:hover {
+    color: #ff7979;
+    text-decoration: underline;
 }
 
-.descripcion-noticias {
-    font-size: 1.2em; 
-    color: #555; 
-    margin-bottom: 20px; 
+/* Botón rojo personalizado */
+.btn-red {
+    height: 60px;
+    background-color: #ff3d3d; /* Rojo intenso */
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.noticias-table {
-    width: 100%; 
-    border-collapse: collapse; 
-}
-
-.table-header {
-    background-color: #007BFF;
-    color: white; 
-    padding: 10px; 
-    border: 1px solid black; 
-}
-
-.table-data {
-    padding: 10px; 
-    border: 1px solid black; 
-}
-
-.link-universidad {
-    color: #007BFF; 
-    text-decoration: none; 
-}
-
-.link-universidad:hover {
-    text-decoration: underline; 
+.btn-red:hover {
+    background-color: #ff7979; /* Rojo más claro al pasar el mouse */
 }
